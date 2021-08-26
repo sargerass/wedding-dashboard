@@ -34,7 +34,7 @@
                 <!--
                     <img src="img/loading-verde.gif">
                     -->
-                    <img src="img/logo.png">
+                    <img src="img/logo.jpeg">
                 </h1>
             </section>
         	<section id="contenidoBaner">
@@ -56,7 +56,7 @@
                             <table >
                                 <tbody>
                                     <tr>
-                                        <td rowspan="2" class="usuario" style="padding-left: 0">
+                                        <td rowspan="2" class="usuario" >
                                             <img id="imagenPerfilUsuario" src="img/logos/america.jpg">
                                         </td>
                                         <td style="padding-right: 0">
@@ -75,10 +75,7 @@
                                     
                                 </tbody>
                             </table>
-                        </div>
-                        <figure class="imagenFull">
-                            <img src="img/hashkike.png">
-                        </figure>                        
+                        </div>                    
                     </div>
                     
                     <div class="fila filaFotos fila3">

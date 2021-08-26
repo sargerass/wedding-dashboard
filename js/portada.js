@@ -38,11 +38,8 @@ function colocarImagenes(){
 	}
 	cargoPagina = true;
 	var arrayListas = $(".filaFotos");
-	var numeroElemento = randomEntre(10,20);
 	var i,j,altoLista,dato;
-	var posicion = 0;
 	arrayListas.data({"alto":0});
-	var altoColumna = $(arrayListas[0]).height();
 	for ( i = 0; i < arrayListas.length; i++) {
 		lista = $(arrayListas[i]);
 		paddingBottom = lista.css("padding-right");
@@ -78,6 +75,7 @@ function randomEntre(min,maximo){
 }
 var cargoPorPrimeraVez = false;
 function getFotosEvento(){
+	console.log('getFotosEvento');
 	$.ajax({		  
 		dataType:"json",
 		//data:data,

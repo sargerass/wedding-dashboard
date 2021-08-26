@@ -1,1 +1,174 @@
-#baneInferior{display:inline-block;width:5000px;height:100%;}#baneInferior .logoImagen{float:left;height:100%}#imagenCargando{display:block;position:absolute;top:0;width:100%;height:85%;background:url("../img/fondo.jpg");}#imagenCargando .tituloBienvenida{color:#fff;text-align:center;margin-top:10%;font-size:50px}#contenidoBaner{display:none;width:101%;height:85%;margin:-.5%;background:#0f0;position:absolute;top:0}footer{background:url("../img/fondo.jpg");height:13%;position:absolute;bottom:0;overflow:hidden;width:100%}#app{position:fixed;left:0;top:0;width:100%;height:100%;background:url("../img/fondo.jpg")}.fila{padding-right:.5%;height:100%;background:url("../img/fondo.jpg");float:left;perspective:800px}.imagenFull{width:50%;text-align:center;margin:0 auto;}.imagenFull img{width:100%}.fila1{width:16.11111%}.fila2{width:32.8888888%}.fila3{width:49.5%}.contenedorLogo{width:100%;margin:0;background:no-repeat center center;position:absolute;transition:all .5s ease-in-out}.contenedorImagen{width:100%;margin:0;background:no-repeat center center;background-color:rgba(255,218,48,0.66);background-blend-mode:multiply;transition:opacity .8s ease-in-out;opacity:1}.contenedorFlip{position:relative;transform-style:preserve-3d;transition:all 1s ease-in-out;width:100%;}.contenedorFlip .contenedorImagen,.contenedorFlip .contenedorLogo{display:block;position:absolute;backface-visibility:hidden;color:#fff;}.contenedorFlip .contenedorImagen.back,.contenedorFlip .contenedorLogo.back{transform:rotateY(180deg)}.contenedorFlip.flipped{transform:rotateY(180deg)}#fotosTwits{width:100%;margin:2% auto}#vistaTwit{opacity:0;transition:opacity .8s ease-in-out;background:#e49d17}.contenidoTwit table{width:100%;margin:0 auto;}.contenidoTwit table td{padding:5px}.contenidoTwit .usuario{width:80px;}.contenidoTwit .usuario img{width:80px;height:80px}.contenidoTwit .nombreUsuario{margin:0;padding:0}.contenidoTwit .contenidoMensajeUsuarios{min-height:80px;overflow:hidden}.contenidoMensaje{width:500px;position:absolute;bottom:100%;left:50%;margin-left:-250px;height:110px;background:#fff;transform:scale(1.5,1.5);transition:all .5s ease-in-out;opacity:0;}.contenidoMensaje.leer{opacity:1;bottom:50%}.contenidoMensaje.leido{transform:scale(1,1);bottom:50px}.contenidoMensaje .mensaje{float:right;width:375px;padding:15px 15px 15px 0;}.contenidoMensaje .mensaje .nombreUsuario{padding:0;margin:0}.contenidoMensaje .mensaje .contenidoMensaje{overflow:hidden;height:70px}
+#baneInferior {
+  display: inline-block;
+  width: 5000px;
+  height: 100%;
+}
+#baneInferior .logoImagen {
+  float: left;
+  height: 100%;
+}
+#imagenCargando {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 85%;
+  background: url("../img/fondo.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#imagenCargando .tituloBienvenida {
+  color: #fff;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 50px;
+}
+#contenidoBaner {
+  display: none;
+  width: 101%;
+  height: 85%;
+  margin: -0.5%;
+  background: #0f0;
+  position: absolute;
+  top: 0;
+}
+footer {
+  background: url("../img/fondo.jpeg");
+  height: 13%;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+}
+#app {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/fondo.jpeg");
+}
+.fila {
+  padding-right: 0.5%;
+  height: 100%;
+  background: url("../img/fondo.jpeg");
+  float: left;
+  perspective: 800px;
+}
+.imagenFull {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+.imagenFull img {
+  width: 100%;
+}
+.fila1 {
+  width: 16.11111%;
+}
+.fila2 {
+  width: 32.8888888%;
+}
+.fila3 {
+  width: 49.5%;
+}
+.contenedorLogo {
+  width: 100%;
+  margin: 0;
+  background: no-repeat center center;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.contenedorImagen {
+  width: 100%;
+  margin: 0;
+  background: no-repeat center center;
+  background-color: rgba(255,218,48,0.66);
+  background-blend-mode: multiply;
+  transition: opacity 0.8s ease-in-out;
+  opacity: 1;
+}
+.contenedorFlip {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.contenedorFlip .contenedorImagen,
+.contenedorFlip .contenedorLogo {
+  display: block;
+  position: absolute;
+  backface-visibility: hidden;
+  color: #fff;
+}
+.contenedorFlip .contenedorImagen.back,
+.contenedorFlip .contenedorLogo.back {
+  transform: rotateY(180deg);
+}
+.contenedorFlip.flipped {
+  transform: rotateY(180deg);
+}
+#fotosTwits {
+  width: 100%;
+  margin: 2% auto;
+}
+#vistaTwit {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  background: #e49d17;
+}
+.contenidoTwit table {
+  width: 100%;
+  margin: 0 auto;
+}
+.contenidoTwit table td {
+  padding: 5px;
+}
+.contenidoTwit .usuario {
+  width: 80px;
+}
+.contenidoTwit .usuario img {
+  width: 80px;
+  height: 80px;
+}
+.contenidoTwit .nombreUsuario {
+  margin: 0;
+  padding: 0;
+}
+.contenidoTwit .contenidoMensajeUsuarios {
+  min-height: 80px;
+  overflow: hidden;
+}
+.contenidoMensaje {
+  width: 500px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -250px;
+  height: 110px;
+  background: #fff;
+  transform: scale(1.5, 1.5);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.contenidoMensaje.leer {
+  opacity: 1;
+  bottom: 50%;
+}
+.contenidoMensaje.leido {
+  transform: scale(1, 1);
+  bottom: 50px;
+}
+.contenidoMensaje .mensaje {
+  float: right;
+  width: 375px;
+  padding: 15px 15px 15px 0;
+}
+.contenidoMensaje .mensaje .nombreUsuario {
+  padding: 0;
+  margin: 0;
+}
+.contenidoMensaje .mensaje .contenidoMensaje {
+  overflow: hidden;
+  height: 70px;
+}

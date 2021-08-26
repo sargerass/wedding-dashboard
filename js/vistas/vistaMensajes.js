@@ -15,7 +15,7 @@ function VistaMensajes(){
 		var anchoTotal = vistaTwit.parent().width();
 		anchoTotal = anchoTotal*porcentaje;
 		var escala = (anchoTotal)/(anchoFotoDQT);
-		var enlace = "img/logo.png";
+		var enlace = "img/logo.jpeg";
 		var an = anchoTotal;
 		var al = altoFotoDQT*escala;
 		imagenFoto.css({"height":al,"background-image":"url("+enlace+")",
@@ -127,7 +127,7 @@ function VistaMensajes(){
 		var anchoTotal = vistaTwit.parent().width();
 		anchoTotal = anchoTotal*porcentaje;
 		var escala = (anchoTotal)/(anchoFotoDQT);
-		var enlace = "img/logo.png";
+		var enlace = "img/logo.jpeg";
 		var an = anchoTotal;
 		var al = altoFotoDQT*escala;
 		imagenFoto.css({"height":al,"background-image":"url("+enlace+")",
