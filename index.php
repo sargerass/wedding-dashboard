@@ -1,3 +1,6 @@
+<?php
+    require 'config.php';
+?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -14,6 +17,7 @@
     </head>
     <script type="text/javascript">
         var hastTag = null;
+        var api = "<?php echo API; ?>";
          <?php 
             if( isset($_GET["hash"]) ){
                 echo "hastTag = '".$_GET["hash"]."'";
@@ -62,11 +66,8 @@
                                         <td style="padding-right: 0">
                                             <section class="contenidoMensajeUsuarios">
                                                 <h4 id="lblNombreUsuario" class="nombreUsuario">
-                                                    Guillermo David Asto Inga
                                                 </h4>
                                                 <div class="mensajeUsuario" id="lblMensajeUsuario">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua.
                                                 </div>
                                             </section>
                                             

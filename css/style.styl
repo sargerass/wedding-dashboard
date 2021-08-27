@@ -1,4 +1,8 @@
-$fondoNegro = url("../img/fondo.jpeg");
+:root {
+	--primary: #663366;
+  --secondary: #669999;
+}
+$fondoNegro = url("../img/fondo.jpg");
 #baneInferior
 	display inline-block
 	width 5000px
@@ -68,6 +72,7 @@ footer
 	background no-repeat center center
 	position absolute
 	transition all .5s ease-in-out
+	background-size: cover
 .contenedorImagen
 	width 100%
 	margin 0
@@ -96,7 +101,8 @@ footer
 #vistaTwit
 	opacity 0
 	transition opacity .8s ease-in-out
-	background #e49d17
+	background var(--primary);
+	margin-bottom: 5px
 .contenidoTwit
 	table
 		width 100%
@@ -109,6 +115,7 @@ footer
 			width 80px
 			height 80px
 			display block
+			object-fit cover
 	.nombreUsuario
 		margin 0
 		padding 0

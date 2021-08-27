@@ -4,18 +4,13 @@ function VistaFoto(lista,dato,clase){
 	var imagen1 = new imagenFoto(anchoTotal,dato,clase);
 	var imagen2 = new imagenFoto(anchoTotal,dato,clase);
 	var imagenActiva = imagen1;
-	//var cantidadVistas = $("<h2>");
 	function init(){
 		dato.vistas++;
 		imagen1.addClass('front');
 		imagen2.addClass('back');
 		elemento.append(imagen1);
 		elemento.append(imagen2);
-		//elemento.css({"width":elemento.getAncho(),"height":elemento.getAlto()});
 		elemento.css({"height":elemento.getAlto()});
-		
-		//imagenActiva.html("vistas: "+dato.vistas);
-		//cantidadVistas.html("----");
 	}
 	elemento.getAlto = function(){
 		return imagenActiva.getAlto();

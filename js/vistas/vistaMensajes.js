@@ -50,9 +50,10 @@ function VistaMensajes(){
 		*/
 		$("#vistaTwit").css("opacity",0);
 		setTimeout(function(){
-			$("#imagenPerfilUsuario").attr("src",mensaje.user.profile_image_url);
-			$("#lblNombreUsuario").html(mensaje.user.name);
-			$("#lblMensajeUsuario").html(mensaje.text);
+			console.log('mensaje', mensaje);
+			$("#imagenPerfilUsuario").attr("src",mensaje.avatar);
+			$("#lblNombreUsuario").html(mensaje.user);
+			$("#lblMensajeUsuario").html(mensaje.message);
 			$("#vistaTwit").css("opacity",1);
 		},500);
 		setTimeout(function(){
@@ -61,9 +62,8 @@ function VistaMensajes(){
 		
 		//console.log("nuevo twit",mensaje);
 		//cambiarFlip();
-		if(mensaje.entities.media){
-			imagen = mensaje.entities.media[0];
-			urlFoto = imagen.media_url;
+		if(mensaje.avatar){
+			urlFoto = mensaje.avatar;
 			colocarImagenTwit(urlFoto);
 		}
 		else{
@@ -71,7 +71,7 @@ function VistaMensajes(){
 		}
 	}
 	function cambiarFlip(){
-		//return;
+		return;
 		if(fotosTwits.hasClass("flipped")){
 			fotosTwits.removeClass('flipped');
 		}
@@ -113,6 +113,7 @@ function VistaMensajes(){
 		cambiarFlip();
 	}
 	function colocarFotoDQT(){
+		
 		console.log("solo mensaje");
 
 		if(mostrandoFotoDQT){
