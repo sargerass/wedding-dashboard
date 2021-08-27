@@ -64,14 +64,13 @@ function VistaMensajes(){
 		//cambiarFlip();
 		if(mensaje.avatar){
 			urlFoto = mensaje.avatar;
-			colocarImagenTwit(urlFoto);
+			//colocarImagenTwit(enlace);
 		}
 		else{
 			colocarFotoDQT();
 		}
 	}
 	function cambiarFlip(){
-		return;
 		if(fotosTwits.hasClass("flipped")){
 			fotosTwits.removeClass('flipped');
 		}
@@ -83,7 +82,7 @@ function VistaMensajes(){
 //		console.log("colocando imagen twit",urlFoto);
 		mostrandoFotoDQT = false;
 		if(imagen1Foto == imagenFoto){
-			imagenFoto = imagen2Foto;
+			imagenFoto = ima;
 		}
 		else{
 			imagenFoto = imagen1Foto;

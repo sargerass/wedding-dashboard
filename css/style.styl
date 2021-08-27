@@ -1,8 +1,14 @@
 :root {
 	--primary: #663366;
   --secondary: #669999;
+	--font-primary: 'Open Sans';
+  --font-secondary: 'Dancing Script';
+  --font-cursive: 'Parisienne';
 }
 $fondoNegro = url("../img/fondo.jpg");
+html , body {
+	font-family: var(--font-primary);
+}
 #baneInferior
 	display inline-block
 	width 5000px
@@ -30,7 +36,7 @@ $fondoNegro = url("../img/fondo.jpg");
 	display none
 	width 101%
 	height 85%
-	margin -.5%
+	margin 0
 	background #0f0
 	position absolute
 	top 0
@@ -49,11 +55,17 @@ footer
 	height 100%
 	background $fondoNegro
 .fila
-	padding-right .5%
+	padding-right 5px
 	height 100%
 	background $fondoNegro
 	float left
 	perspective 800px
+	box-sizing border-box
+	&:last-child 
+		padding-right: 0
+	.fila
+		&:last-child 
+			padding-right: 0
 .imagenFull
 	width 50%
 	text-align center
@@ -61,11 +73,11 @@ footer
 	img
 		width 100%
 .fila1
-	width 16.11111%
+	width 20%
 .fila2
-	width 32.8888888%
+	width 30%
 .fila3
-	width 49.5%
+	width 50%
 .contenedorLogo
 	width 100%
 	margin 0
@@ -86,6 +98,7 @@ footer
 	transform-style preserve-3d
 	transition all 1s ease-in-out
 	width 100%
+	padding-bottom: 5px !important
 	.contenedorImagen,.contenedorLogo
 		display block
 		position absolute
@@ -97,7 +110,11 @@ footer
 		transform rotateY( 180deg )
 #fotosTwits
 	width 100%
-	margin 2% auto
+	margin 0 auto
+	height auto !important
+	img
+		display block
+		width 100%
 #vistaTwit
 	opacity 0
 	transition opacity .8s ease-in-out
@@ -122,6 +139,8 @@ footer
 	.contenidoMensajeUsuarios
 		min-height 80px
 		overflow hidden
+		padding-right: 15px
+		color: white
 .contenidoMensaje
 	width 500px
 	position absolute
@@ -150,3 +169,50 @@ footer
 		.contenidoMensaje
 			overflow hidden
 			height 70px
+
+#maindiv{
+  border: 2px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+	height: 100%;
+	.images {
+		height: 100%;
+		display: inline-block;
+		img {
+			height: 100%;
+			float: left;
+			margin-right: 15px;
+		}
+	}
+}
+
+#div1 {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+	height: 100%;
+}
+
+#div2 {
+  display: inline-block;
+  animation: marquee2 10s linear infinite;
+  animation-delay: 5s;
+	height: 100%;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}

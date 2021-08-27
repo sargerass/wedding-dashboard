@@ -75,15 +75,11 @@ function imagenFoto(anchoTotal,dato,clase){
 		init();
 	}
 	elemento.setDato = function(datoNuevo){
-		//console.log("datoNuevo",datoNuevo);
 		dato.vistas++;
 		dato = datoNuevo;
 		init();
-		//enlace = dato.imagen;
-		//elemento.css({"height":al,"background-image":"url("+enlace+")","background-size":an+"px "+al+"px"}})
 	}
 	function init(){
-		//console.log("error",dato);
 		alto = dato.alto;
 		ancho = dato.ancho;
 		escala = anchoTotal/ancho;
