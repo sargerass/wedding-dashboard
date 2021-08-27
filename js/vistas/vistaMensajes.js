@@ -32,25 +32,13 @@ function VistaMensajes(){
 			}
 			mensaje = arrayVistos[posVisto%arrayVistos.length];
 			posVisto++;
-			//setTimeout(colocarTwit,1000);
-			//console.log("no hay mensaje");
-			//return;
 		}
 		else{
 			mensaje = arrayMensajes.splice(0,1)[0];
 			arrayVistos.push(mensaje);	
 		}
-		
-		//console.log("mensaje sellecionado",arrayMensajes, mensaje);
-		//return;
-		/*
-		var cuadroMensaje = new CuadroMensaje(mensaje);
-		$("#contenidoBaner").append(cuadroMensaje);
-		console.log("---",mensaje);
-		*/
 		$("#vistaTwit").css("opacity",0);
 		setTimeout(function(){
-			console.log('mensaje', mensaje);
 			$("#imagenPerfilUsuario").attr("src",mensaje.avatar);
 			$("#lblNombreUsuario").html(mensaje.user);
 			$("#lblMensajeUsuario").html(mensaje.message);
@@ -59,12 +47,8 @@ function VistaMensajes(){
 		setTimeout(function(){
 			$("#vistaTwit").css("opacity",1);
 		},700);
-		
-		//console.log("nuevo twit",mensaje);
-		//cambiarFlip();
 		if(mensaje.avatar){
 			urlFoto = mensaje.avatar;
-			//colocarImagenTwit(enlace);
 		}
 		else{
 			colocarFotoDQT();
@@ -79,7 +63,6 @@ function VistaMensajes(){
 		}
 	}
 	function colocarImagenTwit(urlFoto){
-//		console.log("colocando imagen twit",urlFoto);
 		mostrandoFotoDQT = false;
 		if(imagen1Foto == imagenFoto){
 			imagenFoto = ima;
@@ -113,8 +96,6 @@ function VistaMensajes(){
 	}
 	function colocarFotoDQT(){
 		
-		console.log("solo mensaje");
-
 		if(mostrandoFotoDQT){
 			return;
 		}
@@ -175,7 +156,6 @@ function CuadroMensaje(dato){
 		usuario.append(imagen);
 		mensaje.append(nombreUsuario);
 		mensaje.append(cuerpoMensaje);
-		console.log("---",dato);
 		var linkFoto = dato.user.profile_image_url;
 		imagen.attr({"src":linkFoto});
 		nombreUsuario.html(dato.user.name);

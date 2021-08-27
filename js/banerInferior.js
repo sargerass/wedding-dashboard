@@ -38,18 +38,14 @@ function banerInferior() {
         baneInferior.append(imagen);
       }
     }
-    //var alto = $("footer").height();
-    //console.log("ancho",alto*arrayLogos.length);
     setInterval(function () {
       var alto = $("footer").height();
       var escala = alto / altoImagen;
       var anchex = Math.round(escala * anchoImagen);
-      //	console.log("el alto es",$("footer").css("height"),alto,"el ancho es ",anchex);
       var ancho = anchex * arrayLogos.length;
       if (pos >= ancho) {
         pos = 0;
       }
-      //console.log("*--",pos,ancho);
       baneInferior.css({ "margin-left": -pos });
 
       pos += 1;

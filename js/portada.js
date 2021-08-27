@@ -198,12 +198,9 @@ function actualizarImagenes() {
   var ar = arrayFotos.concat([]);
   var arrayImangesNuevas = getImagenesNueva(2);
   var i;
-  console.log("actualizarImagenes", ar);
-  //console.log("asasa",arrayImangesNuevas[0],arrayImangesNuevas[1]);
   for (i = 0; i < arrayImangesNuevas.length; i++) {
     vista = ar.splice(randomEntre(0, ar.length - 1))[0];
     obj = arrayImangesNuevas[i];
-    console.log('vista', vista.html(), vista.find('#imagen1Foto').length);
     vista.cambiarImagen(obj);
     ar.push(vista);
   }
