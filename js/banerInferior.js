@@ -1,8 +1,11 @@
 var arrayLogos = [
-  { img: "foto1.jpeg", nombre: "America" },
-  { img: "cetrum.png", nombre: "America" },
-  { img: "aperhu.png", nombre: "America" },
-  { img: "dia1.png", nombre: "America" },
+  { img: "banner.jpg", nombre: "America" },
+  { img: "banner.jpg", nombre: "America" },
+  { img: "banner.jpg", nombre: "America" },
+  { img: "banner.jpg", nombre: "America" },
+  { img: "banner.jpg", nombre: "America" },
+  { img: "banner.jpg", nombre: "America" },
+  { img: "banner.jpg", nombre: "America" },
 
   /*
 	{img:"america.jpg",nombre:"America"},
